@@ -1,0 +1,81 @@
+{
+  "given": [
+    "Aylander",
+    "Thyros",
+    "Kathar",
+    "Pelion",
+    "Lysander",
+    "Theron",
+    "Hector",
+    "Aster",
+    "Diomed",
+    "Archos",
+    "Valerian"
+  ],
+  "titles": [
+    "Tribune",
+    "Shield-Captain",
+    "Guardian",
+    "Sentinel",
+    "Praetor",
+    "Agamatus Custodian"
+  ],
+  "epithets": [
+    "the Auric",
+    "Goldenshield",
+    "the Undying",
+    "Emperor's Sword",
+    "the Eternal Guardian",
+    "Brightspear"
+  ],
+  "adj": [
+    "Auric",
+    "Golden",
+    "Eternal",
+    "Unbroken",
+    "Imperial",
+    "Radiant",
+    "Sublime",
+    "Undying"
+  ],
+  "nouns": [
+    "Spear",
+    "Shield",
+    "Gold",
+    "Wing",
+    "Crown",
+    "Vigil",
+    "Aegis",
+    "Guard"
+  ],
+  "collective": [
+    "Guard",
+    "Custodians",
+    "Watchers",
+    "Shield-Wall",
+    "Golden Host",
+    "Vigil"
+  ],
+  "setting": [
+    "Terra",
+    "the Emperor",
+    "the Palace",
+    "the Golden Throne",
+    "Eternity"
+  ],
+  "place_types": [
+    "Citadel",
+    "Palace",
+    "Fortress",
+    "Watch Tower",
+    "Imperial Bastion",
+    "Vigil Post"
+  ],
+  "relic_nouns": [
+    "Guardian Spear",
+    "Shield",
+    "Golden Blade",
+    "Gauntlet",
+    "Lance"
+  ]
+}

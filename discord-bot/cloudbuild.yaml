@@ -1,0 +1,113 @@
+substitutions:
+  _REGION: us-central1
+  _ARTIFACT_REPOSITORY: bfwg
+  _IMAGE_NAME: discord-bot
+  _BOT_VM_NAME: bfwg-discord-bot
+  _BOT_VM_ZONE: us-central1-a
+  _BOT_CONTAINER_NAME: bfwg-discord-bot
+  _DISCORD_TOKEN_SECRET: discord-token
+  _DISCORD_GUILD_ID_SECRET: guild-id
+  _DISCORD_SYNC_COMMANDS_ON_STARTUP: "false"
+  _CLUB_NIGHT_REMINDER_SCHEDULER_ENABLED: "true"
+  _CLUB_NIGHT_REMINDER_CHANNEL_ID: "1371006057677066350"
+  _CLUB_NIGHT_REMINDER_DAYS_BEFORE: "3"
+  _CLUB_NIGHT_REMINDER_TIME: "19:00"
+  _CLUB_NIGHT_REMINDER_TIMEZONE: Europe/London
+  _CLUB_NIGHT_REMINDER_CHECK_INTERVAL_SECONDS: "3600"
+  _CLUB_NIGHT_ANNOUNCEMENT_SCHEDULER_ENABLED: "true"
+  _CLUB_NIGHT_ANNOUNCEMENT_TIME: "13:00"
+  _CLUB_NIGHT_SIGNUP_STATE_PATH: /app/state/club_night_signups.json
+  _CLUB_NIGHT_PAIRING_HISTORY_STATE_PATH: /app/state/club_night_pairing_history.json
+  _CLUB_NIGHT_PAIRING_LOOKBACK: "2"
+  _CLUB_NIGHT_PAIRING_CONSTRAINTS_STATE_PATH: /app/state/club_night_pairing_constraints.json
+  _FEEDBACK_STATE_PATH: /app/state/feedback.json
+  _CLUB_NIGHT_GAMES_STATE_PATH: /app/state/club_night_games.json
+  # Channel for the auto-maintained community command list. Leave blank to disable.
+  _COMMAND_DOCS_CHANNEL_ID: "1516504526109151365"
+  _GAME_ORGANISATION_EXPORT_ENABLED: "true"
+  _GAME_ORGANISATION_CHANNEL_ID: "1370992608918110258"
+  _GAME_ORGANISATION_EXPORT_PATH: /app/state/game_organisation_export.json
+  _GAME_ORGANISATION_EXPORT_MAX_AGE_HOURS: "24"
+  _GCS_STATE_UPLOAD_ENABLED: "true"
+  _GCS_STATE_BUCKET: blind-faith-494118-bfwg-bot-state
+
+options:
+  logging: CLOUD_LOGGING_ONLY
+
+steps:
+  - name: gcr.io/cloud-builders/docker
+    entrypoint: bash
+    args:
+      - -c
+      - |
+        set -eu
+        rm -rf /workspace/.cloudbuild-context
+        mkdir -p /workspace/.cloudbuild-context
+
+        cp /workspace/discord-bot/requirements.txt /workspace/.cloudbuild-context/requirements.txt
+        cp /workspace/discord-bot/Dockerfile /workspace/.cloudbuild-context/Dockerfile
+        cp -R /workspace/discord-bot/bot /workspace/.cloudbuild-context/bot
+        cp -R /workspace/discord-bot/content /workspace/.cloudbuild-context/content
+
+        if [ -d /workspace/summaries ]; then
+          cp -R /workspace/summaries /workspace/.cloudbuild-context/summaries
+          rm -rf /workspace/.cloudbuild-context/summaries/missions/source-pdfs
+        else
+          mkdir -p /workspace/.cloudbuild-context/summaries
+        fi
+
+        docker build \
+          --build-arg GIT_COMMIT=$COMMIT_SHA \
+          -t ${_REGION}-docker.pkg.dev/$PROJECT_ID/${_ARTIFACT_REPOSITORY}/${_IMAGE_NAME}:$BUILD_ID \
+          -t ${_REGION}-docker.pkg.dev/$PROJECT_ID/${_ARTIFACT_REPOSITORY}/${_IMAGE_NAME}:latest \
+          /workspace/.cloudbuild-context
+
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - push
+      - ${_REGION}-docker.pkg.dev/$PROJECT_ID/${_ARTIFACT_REPOSITORY}/${_IMAGE_NAME}:$BUILD_ID
+
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - push
+      - ${_REGION}-docker.pkg.dev/$PROJECT_ID/${_ARTIFACT_REPOSITORY}/${_IMAGE_NAME}:latest
+
+  - name: gcr.io/google.com/cloudsdktool/cloud-sdk:slim
+    entrypoint: bash
+    args:
+      - -c
+      - |
+        set -eu
+        gcloud compute ssh "${_BOT_VM_NAME}" \
+          --zone="${_BOT_VM_ZONE}" \
+          --quiet \
+          --ssh-key-expire-after=15m \
+          --command="sudo mkdir -p /etc/bfwg"
+
+        gcloud compute scp discord-bot/deploy/start-bot.sh \
+          "${_BOT_VM_NAME}:/tmp/start-bot.sh" \
+          --zone="${_BOT_VM_ZONE}" \
+          --ssh-key-expire-after=15m \
+          --quiet
+
+        gcloud compute scp discord-bot/deploy/bfwg-discord-bot.service \
+          "${_BOT_VM_NAME}:/tmp/bfwg-discord-bot.service" \
+          --zone="${_BOT_VM_ZONE}" \
+          --ssh-key-expire-after=15m \
+          --quiet
+
+        gcloud compute ssh "${_BOT_VM_NAME}" \
+          --zone="${_BOT_VM_ZONE}" \
+          --quiet \
+          --ssh-key-expire-after=15m \
+          --command="sudo install -m 0755 /tmp/start-bot.sh /etc/bfwg/start-bot.sh && sudo install -m 0644 /tmp/bfwg-discord-bot.service /etc/systemd/system/bfwg-discord-bot.service && sudo systemctl daemon-reload && sudo systemctl enable bfwg-discord-bot"
+
+        gcloud compute ssh "${_BOT_VM_NAME}" \
+          --zone="${_BOT_VM_ZONE}" \
+          --quiet \
+          --ssh-key-expire-after=15m \
+          --command="sudo env BFWG_PROJECT_ID=$PROJECT_ID BOT_CONTAINER_NAME=${_BOT_CONTAINER_NAME} DISCORD_TOKEN_SECRET=${_DISCORD_TOKEN_SECRET} DISCORD_GUILD_ID_SECRET=${_DISCORD_GUILD_ID_SECRET} SUMMARIES_DIR=/app/summaries DISCORD_SYNC_COMMANDS_ON_STARTUP=${_DISCORD_SYNC_COMMANDS_ON_STARTUP} CLUB_NIGHT_REMINDER_SCHEDULER_ENABLED=${_CLUB_NIGHT_REMINDER_SCHEDULER_ENABLED} CLUB_NIGHT_REMINDER_CHANNEL_ID=${_CLUB_NIGHT_REMINDER_CHANNEL_ID} CLUB_NIGHT_REMINDER_DAYS_BEFORE=${_CLUB_NIGHT_REMINDER_DAYS_BEFORE} CLUB_NIGHT_REMINDER_TIME=${_CLUB_NIGHT_REMINDER_TIME} CLUB_NIGHT_REMINDER_TIMEZONE=${_CLUB_NIGHT_REMINDER_TIMEZONE} CLUB_NIGHT_REMINDER_CHECK_INTERVAL_SECONDS=${_CLUB_NIGHT_REMINDER_CHECK_INTERVAL_SECONDS} CLUB_NIGHT_ANNOUNCEMENT_SCHEDULER_ENABLED=${_CLUB_NIGHT_ANNOUNCEMENT_SCHEDULER_ENABLED} CLUB_NIGHT_ANNOUNCEMENT_TIME=${_CLUB_NIGHT_ANNOUNCEMENT_TIME} CLUB_NIGHT_SIGNUP_STATE_PATH=${_CLUB_NIGHT_SIGNUP_STATE_PATH} CLUB_NIGHT_PAIRING_HISTORY_STATE_PATH=${_CLUB_NIGHT_PAIRING_HISTORY_STATE_PATH} CLUB_NIGHT_PAIRING_LOOKBACK=${_CLUB_NIGHT_PAIRING_LOOKBACK} CLUB_NIGHT_PAIRING_CONSTRAINTS_STATE_PATH=${_CLUB_NIGHT_PAIRING_CONSTRAINTS_STATE_PATH} FEEDBACK_STATE_PATH=${_FEEDBACK_STATE_PATH} CLUB_NIGHT_GAMES_STATE_PATH=${_CLUB_NIGHT_GAMES_STATE_PATH} COMMAND_DOCS_CHANNEL_ID=${_COMMAND_DOCS_CHANNEL_ID} GAME_ORGANISATION_EXPORT_ENABLED=${_GAME_ORGANISATION_EXPORT_ENABLED} GAME_ORGANISATION_CHANNEL_ID=${_GAME_ORGANISATION_CHANNEL_ID} GAME_ORGANISATION_EXPORT_PATH=${_GAME_ORGANISATION_EXPORT_PATH} GAME_ORGANISATION_EXPORT_MAX_AGE_HOURS=${_GAME_ORGANISATION_EXPORT_MAX_AGE_HOURS} GCS_STATE_UPLOAD_ENABLED=${_GCS_STATE_UPLOAD_ENABLED} GCS_STATE_BUCKET=${_GCS_STATE_BUCKET} /etc/bfwg/start-bot.sh ${_REGION}-docker.pkg.dev/$PROJECT_ID/${_ARTIFACT_REPOSITORY}/${_IMAGE_NAME}:$BUILD_ID"
+
+images:
+  - ${_REGION}-docker.pkg.dev/$PROJECT_ID/${_ARTIFACT_REPOSITORY}/${_IMAGE_NAME}:$BUILD_ID
+  - ${_REGION}-docker.pkg.dev/$PROJECT_ID/${_ARTIFACT_REPOSITORY}/${_IMAGE_NAME}:latest

@@ -1,0 +1,87 @@
+{
+  "given": [
+    "Aldric",
+    "Jonath",
+    "Calvar",
+    "Surivo",
+    "Peridur",
+    "Eidomar",
+    "Lucivarn",
+    "Fabrik",
+    "Edran",
+    "Halvard",
+    "Corvin"
+  ],
+  "titles": [
+    "Knight",
+    "Paladin",
+    "Lord",
+    "Champion",
+    "Warden",
+    "Sword-Sworn",
+    "First Knight",
+    "Grand Master"
+  ],
+  "epithets": [
+    "the Bold",
+    "Lionheart",
+    "the Honoured",
+    "Brightshield",
+    "the Stalwart",
+    "Goldenwing",
+    "Ironvow"
+  ],
+  "adj": [
+    "Noble",
+    "Proud",
+    "Ancient",
+    "Gilded",
+    "Righteous",
+    "Hallowed",
+    "Radiant",
+    "Grand"
+  ],
+  "nouns": [
+    "Lion",
+    "Banner",
+    "Shield",
+    "Blade",
+    "Honour",
+    "Crest",
+    "Order",
+    "Standard"
+  ],
+  "collective": [
+    "Order",
+    "Brotherhood",
+    "Honour Guard",
+    "Knights",
+    "Sword-Sworn",
+    "Chosen"
+  ],
+  "setting": [
+    "Caliban",
+    "the Lion",
+    "the Emperor",
+    "Duty",
+    "Honour",
+    "the Inner Circle"
+  ],
+  "place_types": [
+    "Fortress",
+    "Castle",
+    "Citadel",
+    "Tower",
+    "Redoubt",
+    "Hall",
+    "Stronghold"
+  ],
+  "relic_nouns": [
+    "Blade",
+    "Shield",
+    "Lance",
+    "Banner",
+    "Gauntlet",
+    "Standard"
+  ]
+}

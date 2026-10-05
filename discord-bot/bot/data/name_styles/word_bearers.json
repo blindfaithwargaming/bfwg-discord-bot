@@ -1,0 +1,81 @@
+{
+  "given": [
+    "Koral",
+    "Mordul",
+    "Vekhan",
+    "Erebon",
+    "Sethar",
+    "Kulvak",
+    "Ahzaron",
+    "Danthos",
+    "Merak",
+    "Bhork",
+    "Xaphan"
+  ],
+  "titles": [
+    "Dark Apostle",
+    "Chaos Champion",
+    "First Acolyte",
+    "Warmonger of Colchis",
+    "Bearer of the Word"
+  ],
+  "epithets": [
+    "the Devoted",
+    "Truth-Seeker",
+    "the Blessed",
+    "Scripture-Keeper",
+    "the Burning",
+    "the Anointed",
+    "Wordbearer"
+  ],
+  "adj": [
+    "Holy",
+    "Sacred",
+    "Devoted",
+    "Colchisian",
+    "Blessed",
+    "Eternal",
+    "Burning",
+    "Consecrated"
+  ],
+  "nouns": [
+    "Scripture",
+    "Sigil",
+    "Word",
+    "Tome",
+    "Flame",
+    "Creed",
+    "Altar",
+    "Mark"
+  ],
+  "collective": [
+    "Devout",
+    "Blessed",
+    "Word-Bearers",
+    "Faithful",
+    "Congregation",
+    "Unholy Host"
+  ],
+  "setting": [
+    "Colchis",
+    "Lorgar",
+    "the Truth",
+    "the Gods",
+    "Devotion"
+  ],
+  "place_types": [
+    "Shrine",
+    "Temple",
+    "Altar",
+    "Cathedral",
+    "Sanctum",
+    "Dark Chapel"
+  ],
+  "relic_nouns": [
+    "Tome",
+    "Scripture-Blade",
+    "Mace",
+    "Burning Blade",
+    "Accursed Bolter"
+  ]
+}

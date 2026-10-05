@@ -1,0 +1,83 @@
+{
+  "given": [
+    "Corvek",
+    "Solvar",
+    "Shaern",
+    "Renath",
+    "Aelric",
+    "Alphyn",
+    "Velkor",
+    "Kelman",
+    "Corvyn",
+    "Malkris",
+    "Vael"
+  ],
+  "titles": [
+    "Shadow Captain",
+    "Operative",
+    "Strike Leader",
+    "Infiltrator",
+    "Ghost-Commander",
+    "Vanguard Master"
+  ],
+  "epithets": [
+    "the Ghost",
+    "Shadowstep",
+    "Ghostwing",
+    "the Unseen",
+    "Hydra-Born",
+    "Wraithkin",
+    "the Hidden"
+  ],
+  "adj": [
+    "Shadow",
+    "Silent",
+    "Dark",
+    "Concealed",
+    "Hidden",
+    "Ghostly",
+    "Phantom",
+    "Void-Touched"
+  ],
+  "nouns": [
+    "Shadow",
+    "Ghost",
+    "Shroud",
+    "Talon",
+    "Veil",
+    "Wing",
+    "Step",
+    "Cloak"
+  ],
+  "collective": [
+    "Shadows",
+    "Ghost Squad",
+    "Silent Talons",
+    "Wraiths",
+    "Vanguard",
+    "Unseen Host"
+  ],
+  "setting": [
+    "Deliverance",
+    "the Raven",
+    "Hydra",
+    "the Veil",
+    "Alpharius",
+    "the Shadow"
+  ],
+  "place_types": [
+    "Shadow Base",
+    "Void Station",
+    "Hidden Fortress",
+    "Concealed Hold",
+    "Dark Outpost",
+    "Ghost Redoubt"
+  ],
+  "relic_nouns": [
+    "Blade",
+    "Bolter",
+    "Talon",
+    "Claw",
+    "Shroud-Pistol"
+  ]
+}

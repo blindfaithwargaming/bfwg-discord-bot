@@ -1,0 +1,82 @@
+{
+  "given": [
+    "Gadal",
+    "Velth",
+    "Phargh",
+    "Morthan",
+    "Typhos",
+    "Draven",
+    "Kulthar",
+    "Purek",
+    "Pallor",
+    "Grevak",
+    "Ulkor"
+  ],
+  "titles": [
+    "Plague Champion",
+    "Reaper",
+    "Death Guard",
+    "Blighted One",
+    "Mortisian",
+    "Phlegm-Father"
+  ],
+  "epithets": [
+    "the Reaper",
+    "Rot-Fist",
+    "the Unyielding",
+    "Plaguebearer",
+    "the Eternal",
+    "Deathwalker",
+    "the Rotting"
+  ],
+  "adj": [
+    "Decaying",
+    "Blighted",
+    "Rusted",
+    "Eternal",
+    "Mortisian",
+    "Enduring",
+    "Pestilent",
+    "Unyielding"
+  ],
+  "nouns": [
+    "Reaper",
+    "Plague",
+    "Death",
+    "Scythe",
+    "Rot",
+    "Blight",
+    "Decay",
+    "Shroud"
+  ],
+  "collective": [
+    "Death Watch",
+    "Plague Brothers",
+    "Reapers",
+    "Blighted Host",
+    "Eternal Guard",
+    "Scythemen"
+  ],
+  "setting": [
+    "Mortarion",
+    "the Reaper's Scythe",
+    "Barbarus",
+    "Plague",
+    "Death"
+  ],
+  "place_types": [
+    "Plague Fortress",
+    "Death Hold",
+    "Rotting Bastion",
+    "Blighted Station",
+    "Mortuary",
+    "Blight Hold"
+  ],
+  "relic_nouns": [
+    "Scythe",
+    "Plague-Blade",
+    "Shield",
+    "Axe",
+    "Blight Bolter"
+  ]
+}

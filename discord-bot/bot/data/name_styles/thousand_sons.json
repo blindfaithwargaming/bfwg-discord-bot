@@ -1,0 +1,87 @@
+{
+  "given": [
+    "Ahrkan",
+    "Khalia",
+    "Setha",
+    "Amunta",
+    "Amenkar",
+    "Thothis",
+    "Osaran",
+    "Neph",
+    "Khetar",
+    "Atum",
+    "Psykan",
+    "Hathor"
+  ],
+  "titles": [
+    "Sorcerer",
+    "Magister",
+    "Enumerator",
+    "Pavoni",
+    "Athanaean",
+    "Acolyte of Magnus",
+    "Rune-Keeper"
+  ],
+  "epithets": [
+    "All-Seeing",
+    "Starweaver",
+    "Runekeeper",
+    "Mindfire",
+    "the Awakened",
+    "the Gilded",
+    "Flame-Touched"
+  ],
+  "adj": [
+    "Arcane",
+    "Starlit",
+    "Gilded",
+    "Prophetic",
+    "Eldritch",
+    "Psychic",
+    "Crystalline",
+    "Burning"
+  ],
+  "nouns": [
+    "Tome",
+    "Star",
+    "Eye",
+    "Scroll",
+    "Flame",
+    "Shard",
+    "Sigil",
+    "Rune"
+  ],
+  "collective": [
+    "Coven",
+    "Circle",
+    "Sorcerers",
+    "Seers",
+    "Conclave",
+    "Flame-Brothers"
+  ],
+  "setting": [
+    "Prospero",
+    "Magnus",
+    "the Great Ocean",
+    "the Eye",
+    "Fate",
+    "the Rubric"
+  ],
+  "place_types": [
+    "Sanctum",
+    "Observatory",
+    "Archive",
+    "Spire",
+    "Library",
+    "Athenaeum",
+    "Tower of Sight"
+  ],
+  "relic_nouns": [
+    "Staff",
+    "Tome",
+    "Amulet",
+    "Scroll",
+    "Focus",
+    "Sceptre"
+  ]
+}

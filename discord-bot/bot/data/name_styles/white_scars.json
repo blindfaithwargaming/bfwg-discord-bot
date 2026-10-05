@@ -1,0 +1,84 @@
+{
+  "given": [
+    "Shiban",
+    "Jakhar",
+    "Torghun",
+    "Yesugei",
+    "Mongatan",
+    "Subuhei",
+    "Telimur",
+    "Khalum",
+    "Batuk",
+    "Chuluun",
+    "Togrul"
+  ],
+  "titles": [
+    "Khan",
+    "Noyan-Khan",
+    "Storm Rider",
+    "Brother of the Wind",
+    "Warhawk",
+    "Sky-Khan"
+  ],
+  "epithets": [
+    "the Swift",
+    "Stormcaller",
+    "Sky-Dancer",
+    "Thunder's Son",
+    "the Falcon",
+    "Wind-Rider",
+    "the Untamed"
+  ],
+  "adj": [
+    "Swift",
+    "Storming",
+    "Sky-Born",
+    "Wind-Driven",
+    "Hunting",
+    "Rolling",
+    "Thunder-Marked",
+    "Horizon"
+  ],
+  "nouns": [
+    "Storm",
+    "Wind",
+    "Arrow",
+    "Hawk",
+    "Tide",
+    "Sky",
+    "Thunder",
+    "Steppe"
+  ],
+  "collective": [
+    "Riders",
+    "Storm Brotherhood",
+    "Sky Hunters",
+    "Wind Kin",
+    "Arrow-Brothers",
+    "Warhawks"
+  ],
+  "setting": [
+    "Chogoris",
+    "Jaghatai",
+    "the Sky",
+    "the Wind",
+    "the Storm",
+    "the Khan",
+    "the Great Hunt"
+  ],
+  "place_types": [
+    "Camp",
+    "Outpost",
+    "Wind Station",
+    "Sky Fortress",
+    "Hunting Ground",
+    "Storm Hold"
+  ],
+  "relic_nouns": [
+    "Bow",
+    "Blade",
+    "Spear",
+    "Shield",
+    "Hunting Lance"
+  ]
+}

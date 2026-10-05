@@ -1,0 +1,90 @@
+{
+  "given": [
+    "Julius",
+    "Marcus",
+    "Gaius",
+    "Lucius",
+    "Titus",
+    "Decimus",
+    "Quintus",
+    "Octavius",
+    "Flavius",
+    "Cornelius",
+    "Aulus",
+    "Maximus",
+    "Servius"
+  ],
+  "titles": [
+    "Legate",
+    "Tribune",
+    "Centurion",
+    "Praetor",
+    "First Captain",
+    "Champion of the Legion",
+    "Standard-Bearer"
+  ],
+  "epithets": [
+    "Unbroken",
+    "Iron Will",
+    "Fortis",
+    "Resolute",
+    "the Just",
+    "Stoneguard",
+    "the Eternal"
+  ],
+  "adj": [
+    "Eternal",
+    "Iron",
+    "Gilded",
+    "Resolute",
+    "Radiant",
+    "Proud",
+    "Unyielding",
+    "Triumphant",
+    "Unbroken"
+  ],
+  "nouns": [
+    "Blade",
+    "Shield",
+    "Honour",
+    "Wall",
+    "Pillar",
+    "Standard",
+    "Fist",
+    "Legion"
+  ],
+  "collective": [
+    "Legion",
+    "Brotherhood",
+    "Honour Guard",
+    "Phalanx",
+    "Cohort",
+    "Shield Wall"
+  ],
+  "setting": [
+    "Ultramar",
+    "Terra",
+    "the Emperor",
+    "the Legion",
+    "Duty",
+    "Honour",
+    "the Wall"
+  ],
+  "place_types": [
+    "Fortress",
+    "Citadel",
+    "Station",
+    "Bastion",
+    "Keep",
+    "Outpost",
+    "Watch"
+  ],
+  "relic_nouns": [
+    "Shield",
+    "Blade",
+    "Standard",
+    "Bolter",
+    "Banner",
+    "Armour"
+  ]
+}

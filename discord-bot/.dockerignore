@@ -1,0 +1,11 @@
+**/__pycache__
+**/.pytest_cache
+**/*.pyc
+.env
+.env.*
+!.env.example
+.venv/
+.mypy_cache/
+.ruff_cache/
+tests/
+summaries/missions/source-pdfs

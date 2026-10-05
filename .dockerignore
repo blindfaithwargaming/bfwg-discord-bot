@@ -1,0 +1,15 @@
+.git/
+.gitignore
+.DS_Store
+
+discord-bot/.env
+discord-bot/.venv/
+discord-bot/__pycache__/
+discord-bot/**/__pycache__/
+discord-bot/**/*.py[cod]
+discord-bot/.pytest_cache/
+discord-bot/.mypy_cache/
+discord-bot/.ruff_cache/
+
+pdfs/
+toc_previews/

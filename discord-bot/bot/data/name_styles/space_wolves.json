@@ -1,0 +1,91 @@
+{
+  "given": [
+    "Ulfric",
+    "Bjorngar",
+    "Ragnvald",
+    "Skarid",
+    "Grimvar",
+    "Ivari",
+    "Fengar",
+    "Valdric",
+    "Sigmar",
+    "Aldric",
+    "Leifar",
+    "Gunnar",
+    "Jorund",
+    "Torval"
+  ],
+  "titles": [
+    "Wolf Lord",
+    "Iron Priest",
+    "Rune Priest",
+    "Grey Slayer",
+    "Pack Leader",
+    "Wolf Scout"
+  ],
+  "epithets": [
+    "Ironjaw",
+    "Wyrmslayer",
+    "Wolfsblood",
+    "Stoneheart",
+    "Frostborn",
+    "Skullbreaker",
+    "Ghostwalker",
+    "Bloodpelt"
+  ],
+  "adj": [
+    "Howling",
+    "Frozen",
+    "Iron",
+    "Ancient",
+    "Feral",
+    "Grey",
+    "Frost-Bitten",
+    "Blood-Soaked",
+    "Void-Scarred"
+  ],
+  "nouns": [
+    "Fang",
+    "Gale",
+    "Claw",
+    "Rune",
+    "Pelt",
+    "Hunt",
+    "Howl",
+    "Pack"
+  ],
+  "collective": [
+    "Pack",
+    "Hunt",
+    "Brotherhood",
+    "Hunters",
+    "Claws",
+    "Fangs",
+    "Wyrmhunters"
+  ],
+  "setting": [
+    "Fenris",
+    "Morkai",
+    "the Wolf King",
+    "Winter",
+    "the Long Night",
+    "the Pack"
+  ],
+  "place_types": [
+    "Hold",
+    "Peak",
+    "Lair",
+    "Outpost",
+    "Station",
+    "Keep",
+    "Den"
+  ],
+  "relic_nouns": [
+    "Axe",
+    "Hammer",
+    "Blade",
+    "Shield",
+    "Rune-Stone",
+    "Totem"
+  ]
+}

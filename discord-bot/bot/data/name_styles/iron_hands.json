@@ -1,0 +1,84 @@
+{
+  "given": [
+    "Ferrak",
+    "Shadvik",
+    "Medvar",
+    "Galvon",
+    "Cerbos",
+    "Thyrak",
+    "Omnix",
+    "Gallius",
+    "Magnon",
+    "Aurac",
+    "Ferrik"
+  ],
+  "titles": [
+    "Magos",
+    "Artisan-Militant",
+    "Forge-Captain",
+    "Iron Father",
+    "Techno-Archaeologist",
+    "Mek-Lord"
+  ],
+  "epithets": [
+    "the Iron",
+    "Gorgon's Son",
+    "the Unfeeling",
+    "Servo-Blessed",
+    "the Calcified",
+    "Forge-Touched",
+    "Iron-Boned"
+  ],
+  "adj": [
+    "Iron",
+    "Forge-Bright",
+    "Cogitant",
+    "Mechanical",
+    "Omnissian",
+    "Geared",
+    "Binary",
+    "Cold"
+  ],
+  "nouns": [
+    "Cog",
+    "Forge",
+    "Circuit",
+    "Iron",
+    "Servo",
+    "Data",
+    "Gear",
+    "Bolt"
+  ],
+  "collective": [
+    "Forge-Brothers",
+    "Iron Guard",
+    "Mechanicus Host",
+    "Cog-Kin",
+    "Data-Cult",
+    "Mek-Corps"
+  ],
+  "setting": [
+    "the Omnissiah",
+    "Medusa",
+    "the Forge",
+    "Mars",
+    "Iron",
+    "the Machine God"
+  ],
+  "place_types": [
+    "Forge",
+    "Smithy",
+    "Data Vault",
+    "Station",
+    "Iron Citadel",
+    "Machine Temple",
+    "Tech-Shrine"
+  ],
+  "relic_nouns": [
+    "Mechadendrite",
+    "Omnissian Axe",
+    "Data-Blade",
+    "Servo-Arm",
+    "Cogitator"
+  ]
+}

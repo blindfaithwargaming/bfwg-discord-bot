@@ -1,0 +1,82 @@
+{
+  "given": [
+    "Varyn",
+    "Keth",
+    "Dralok",
+    "Morvan",
+    "Salyk",
+    "Brekkon",
+    "Aldrus",
+    "Karvan",
+    "Stevar",
+    "Rethyn",
+    "Malkur"
+  ],
+  "titles": [
+    "Broken Blade",
+    "The Nameless",
+    "Survivor",
+    "Last of the Legion",
+    "Ghost Captain",
+    "Renegade"
+  ],
+  "epithets": [
+    "the Broken",
+    "No-Name",
+    "Outcast",
+    "the Forgotten",
+    "Last Kin",
+    "the Survivor",
+    "the Unnamed"
+  ],
+  "adj": [
+    "Broken",
+    "Scarred",
+    "Lost",
+    "Forgotten",
+    "Unnamed",
+    "Scattered",
+    "Ruined",
+    "Hollow"
+  ],
+  "nouns": [
+    "Remnant",
+    "Shard",
+    "Ghost",
+    "Exile",
+    "Ruin",
+    "Scar",
+    "Splinter",
+    "Wreck"
+  ],
+  "collective": [
+    "Remnants",
+    "Ghosts",
+    "Exiles",
+    "Survivors",
+    "Broken Brothers",
+    "The Lost"
+  ],
+  "setting": [
+    "the Dead Legion",
+    "Exile",
+    "the Shattered",
+    "the Lost",
+    "the Long War"
+  ],
+  "place_types": [
+    "Wreck",
+    "Void Station",
+    "Ruin",
+    "Outpost",
+    "Last Hold",
+    "Refuge"
+  ],
+  "relic_nouns": [
+    "Blade",
+    "Bolter",
+    "Shield",
+    "Axe",
+    "Combat Knife"
+  ]
+}

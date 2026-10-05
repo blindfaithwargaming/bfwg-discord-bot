@@ -1,0 +1,83 @@
+{
+  "given": [
+    "Numeon",
+    "Hekaton",
+    "Pyriel",
+    "Perkyl",
+    "Calvar",
+    "Daegar",
+    "Soren",
+    "Tylos",
+    "Athos",
+    "Vexar",
+    "Drakhen"
+  ],
+  "titles": [
+    "Forge Father",
+    "Chaplain of Nocturne",
+    "Fireborn",
+    "Promethean",
+    "Master Craftsman",
+    "Dragon-Kin"
+  ],
+  "epithets": [
+    "the Unbroken",
+    "Dragonfire",
+    "Forge-Blessed",
+    "the Enduring",
+    "Ironhide",
+    "the Undying",
+    "Flame-Touched"
+  ],
+  "adj": [
+    "Forge-Bright",
+    "Draconic",
+    "Volcanic",
+    "Fire-Blessed",
+    "Enduring",
+    "Promethean",
+    "Ancient",
+    "Molten"
+  ],
+  "nouns": [
+    "Flame",
+    "Forge",
+    "Scale",
+    "Drake",
+    "Ash",
+    "Ember",
+    "Wrath",
+    "Hammer"
+  ],
+  "collective": [
+    "Forge-Brothers",
+    "Drake Kin",
+    "Fireborn",
+    "Prometheans",
+    "Salamander's Sons",
+    "Ember Guard"
+  ],
+  "setting": [
+    "Nocturne",
+    "Vulkan",
+    "the Forge",
+    "the Drake",
+    "the Anvil"
+  ],
+  "place_types": [
+    "Forge",
+    "Smithy",
+    "Fire Station",
+    "Volcanic Outpost",
+    "Drake Hold",
+    "Lava Bastion",
+    "Hearthhold"
+  ],
+  "relic_nouns": [
+    "Hammer",
+    "Forge-Blade",
+    "Drake-Scale Shield",
+    "Burning Blade",
+    "Anvil-Axe"
+  ]
+}

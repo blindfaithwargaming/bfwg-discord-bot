@@ -1,0 +1,10 @@
+# Trims the source upload for `gcloud builds submit` from the repo root.
+# When this file exists gcloud no longer derives one from .gitignore, so the
+# .gitignore patterns are pulled in explicitly below.
+.gcloudignore
+.git
+#!include:.gitignore
+
+# Not needed by the bot image; source-pdfs alone is ~56 MB of local-only scans.
+archive/
+summaries/missions/source-pdfs/

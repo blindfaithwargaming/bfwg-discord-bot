@@ -1,0 +1,83 @@
+{
+  "given": [
+    "Sevar",
+    "Konrath",
+    "Raikan",
+    "Vorn",
+    "Drak",
+    "Ezekhar",
+    "Torval",
+    "Kral",
+    "Abrak",
+    "Malphor",
+    "Xandrak"
+  ],
+  "titles": [
+    "First Claw",
+    "Captain of the Dark",
+    "Warleader",
+    "Terror-Bringer",
+    "Night Haunter's Champion"
+  ],
+  "epithets": [
+    "Flayed",
+    "Darkblade",
+    "Shadowhand",
+    "Merciless",
+    "Dreadcloak",
+    "Fearmonger",
+    "the Haunted"
+  ],
+  "adj": [
+    "Dark",
+    "Shrieking",
+    "Haunted",
+    "Dread",
+    "Night",
+    "Void",
+    "Shadow",
+    "Sunless",
+    "Endless"
+  ],
+  "nouns": [
+    "Claw",
+    "Terror",
+    "Shroud",
+    "Talon",
+    "Fear",
+    "Dread",
+    "Void",
+    "Night"
+  ],
+  "collective": [
+    "Claws",
+    "Terror Squad",
+    "Night Watch",
+    "Reapers",
+    "Shades",
+    "Dread Host"
+  ],
+  "setting": [
+    "Nostramo",
+    "the Void",
+    "the Night",
+    "Fear",
+    "the Haunter",
+    "Darkness"
+  ],
+  "place_types": [
+    "Void Station",
+    "Dark Hold",
+    "Night Fortress",
+    "Haunted Keep",
+    "Shadow Bastion",
+    "Dread Spire"
+  ],
+  "relic_nouns": [
+    "Blade",
+    "Claw",
+    "Night-Talon",
+    "Shadow-Axe",
+    "Chain"
+  ]
+}

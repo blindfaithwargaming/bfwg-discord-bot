@@ -1,0 +1,81 @@
+{
+  "given": [
+    "K'thran",
+    "Xar'ul",
+    "Vel'koth",
+    "Braknar",
+    "Mal'grath",
+    "Skar'ax",
+    "Ghor'eth",
+    "Zur'vex",
+    "Nex'ul",
+    "Rha'vor"
+  ],
+  "titles": [
+    "Herald",
+    "Keeper of Secrets",
+    "Lord of Change",
+    "Bloodthirster",
+    "Daemon Prince",
+    "Void-Presence"
+  ],
+  "epithets": [
+    "the Unbound",
+    "Warp-Born",
+    "the Eternal",
+    "Void-Touched",
+    "the Unnameable",
+    "Corruption-Blessed"
+  ],
+  "adj": [
+    "Daemonic",
+    "Warp-Touched",
+    "Eternal",
+    "Unbound",
+    "Gibbering",
+    "Eldritch",
+    "Void",
+    "Writhing"
+  ],
+  "nouns": [
+    "Warp",
+    "Void",
+    "Eye",
+    "Flame",
+    "Screech",
+    "Hunger",
+    "Rift",
+    "Darkness"
+  ],
+  "collective": [
+    "Daemon Host",
+    "Warp Spawn",
+    "Void Creatures",
+    "Cursed",
+    "Unbound",
+    "Rift-Born"
+  ],
+  "setting": [
+    "the Warp",
+    "Chaos",
+    "the Void",
+    "the Eye",
+    "Oblivion",
+    "the Immaterium"
+  ],
+  "place_types": [
+    "Daemon World",
+    "Warp Rift",
+    "Corrupted Station",
+    "Dark Realm",
+    "Void Bastion",
+    "Chaos Sanctum"
+  ],
+  "relic_nouns": [
+    "Blade",
+    "Claw",
+    "Flame-Sword",
+    "Warp-Axe",
+    "Void Shard"
+  ]
+}

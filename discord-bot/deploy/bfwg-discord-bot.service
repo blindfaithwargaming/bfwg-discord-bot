@@ -1,0 +1,17 @@
+[Unit]
+Description=BFWG Discord Bot
+Wants=network-online.target
+After=network-online.target docker.service
+Requires=docker.service
+
+[Service]
+Type=simple
+ExecStart=/etc/bfwg/start-bot.sh
+ExecStop=-/usr/bin/docker stop -t 30 bfwg-discord-bot
+Restart=always
+RestartSec=10
+TimeoutStartSec=0
+TimeoutStopSec=45
+
+[Install]
+WantedBy=multi-user.target

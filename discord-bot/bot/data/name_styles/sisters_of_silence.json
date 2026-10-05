@@ -1,0 +1,82 @@
+{
+  "given": [
+    "Azariel",
+    "Sangur",
+    "Raziela",
+    "Lanthrel",
+    "Athos",
+    "Seraphiel",
+    "Mirael",
+    "Cassia",
+    "Lyrel",
+    "Aelindra",
+    "Vaerel"
+  ],
+  "titles": [
+    "Lord of the Red",
+    "Angel of Death",
+    "Sanguinary Guard",
+    "Auroran",
+    "High Chaplain",
+    "Silent Sister"
+  ],
+  "epithets": [
+    "the Crimson",
+    "Goldwing",
+    "the Blessed",
+    "Blood-Sworn",
+    "the Radiant",
+    "Angelfire",
+    "the Transcendent"
+  ],
+  "adj": [
+    "Crimson",
+    "Golden",
+    "Radiant",
+    "Blessed",
+    "Auroran",
+    "Blood-Red",
+    "Transcendent",
+    "Sublime"
+  ],
+  "nouns": [
+    "Wing",
+    "Blood",
+    "Halo",
+    "Chalice",
+    "Tear",
+    "Blade",
+    "Song",
+    "Vow"
+  ],
+  "collective": [
+    "Angels",
+    "Sanguinary Guard",
+    "Blood-Sworn",
+    "Wings",
+    "Scarlet Host",
+    "Chosen"
+  ],
+  "setting": [
+    "Baal",
+    "Sanguinius",
+    "the Father",
+    "the Red Thirst",
+    "the Emperor"
+  ],
+  "place_types": [
+    "Shrine",
+    "Citadel",
+    "Sanctum",
+    "Blood Tower",
+    "Spire",
+    "Chapel"
+  ],
+  "relic_nouns": [
+    "Blade",
+    "Chalice",
+    "Wing-Shield",
+    "Spear",
+    "Holy Bolter"
+  ]
+}

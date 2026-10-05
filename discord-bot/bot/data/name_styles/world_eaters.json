@@ -1,0 +1,86 @@
+{
+  "given": [
+    "Varro",
+    "Krotas",
+    "Perdar",
+    "Ferrat",
+    "Sevkor",
+    "Krath",
+    "Gorvar",
+    "Drus",
+    "Angrak",
+    "Varrak",
+    "Bruttar",
+    "Malgur"
+  ],
+  "titles": [
+    "Siege-Master",
+    "Champion",
+    "Warsmith",
+    "Executioner",
+    "Breacher",
+    "Destroyer",
+    "Iron Lord"
+  ],
+  "epithets": [
+    "Crusher",
+    "Ironbreaker",
+    "Bloodhand",
+    "Skulltaker",
+    "Relentless",
+    "Siege-Breaker",
+    "the Unyielding"
+  ],
+  "adj": [
+    "Iron",
+    "Shattered",
+    "Brutal",
+    "Remorseless",
+    "Blood-Soaked",
+    "Unyielding",
+    "Grinding",
+    "Merciless"
+  ],
+  "nouns": [
+    "Siege",
+    "Hammer",
+    "Wall",
+    "Rampart",
+    "Wrath",
+    "Skull",
+    "Blade",
+    "Chain"
+  ],
+  "collective": [
+    "Breakers",
+    "Iron Guard",
+    "Siege Corps",
+    "Chainbound",
+    "Wreckers",
+    "Crushers"
+  ],
+  "setting": [
+    "the Siege",
+    "the Warmaster",
+    "Blood",
+    "Iron",
+    "the Fortress",
+    "Hate"
+  ],
+  "place_types": [
+    "Fortress",
+    "Redoubt",
+    "Battery",
+    "Bunker",
+    "Bastille",
+    "Siege Works"
+  ],
+  "relic_nouns": [
+    "Hammer",
+    "Axe",
+    "Chain",
+    "Siege Blade",
+    "Bolter",
+    "Shield"
+  ]
+}
